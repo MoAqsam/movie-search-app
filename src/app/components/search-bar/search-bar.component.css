@@ -1,0 +1,17 @@
+.search_bar {
+  margin: 30px 10px 10px 10px;
+  text-align: center;
+}
+#searchBar {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 14%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#searchBar:focus {
+  width: 60%;
+}
+

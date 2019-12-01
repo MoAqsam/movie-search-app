@@ -1,0 +1,15 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #003EFF;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#heart {
+  display: inline;
+  color: red;
+}
+

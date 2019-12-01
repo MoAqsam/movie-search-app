@@ -1,0 +1,7 @@
+<div class="search_bar">
+  <input type="text" (keyup)="retrieveMovies()"
+         [(ngModel)]="searchText" name="search" id="searchBar" placeholder="Enter name of movie...">
+  <div *ngIf="Movie">
+    <app-movie-card [movieData]="Movie"></app-movie-card>
+  </div>
+</div>

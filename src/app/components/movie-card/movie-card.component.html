@@ -1,0 +1,11 @@
+<div class="movie-card" *ngIf="movieData">
+  <div class="movie-card__header">
+    <h2>{{movieData.Title}}</h2>
+  </div>
+  <div class="movie-card__poster" *ngIf="movieData.Poster">
+    <img src={{movieData.Poster}} alt="Poster">
+  </div>
+  <div class="movie-card__details">
+    <span>Rating: {{movieData.Rated}}</span>
+  </div>
+</div>
