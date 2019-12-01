@@ -1,7 +1,11 @@
 <div class="search_bar">
   <input type="text" (keyup)="retrieveMovies()"
          [(ngModel)]="searchText" name="search" id="searchBar" placeholder="Enter name of movie...">
-  <div *ngIf="Movie">
-    <app-movie-card [movieData]="Movie"></app-movie-card>
+  <div *ngIf="Movies">
+    <mat-grid-list [cols]="breakPoint" gutterSize="4rem">
+      <mat-grid-tile *ngFor="let movie of Movies">
+        <app-movie-card [movieData]="movie"></app-movie-card>
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
 </div>
